@@ -1,6 +1,6 @@
 pipeline {
   agent {
-  docker {image jenkins/agent:latest }
+  docker {image 'jenkins/agent:latest' }
   }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
