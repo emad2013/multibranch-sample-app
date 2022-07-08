@@ -1,6 +1,6 @@
 pipeline {
   agent {
-  docker {image 'jenkins/agent:latest' }
+  docker {image 'gradle:jdk18-alpine' }
   }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
